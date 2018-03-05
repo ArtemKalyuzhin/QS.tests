@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1">
+  <meta name="description" content="Quadcopters">
+  <meta name="keywords" content="quadcopters, drone">
+  <meta name="author" content="Artem Kalyuzhin">
+  <!-- <link rel="stylesheet" href="./css/reset.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Krona+One|Roboto|Saira+Condensed:500" rel="stylesheet">
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-auth.js"></script>
+
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Drone | Wellcome</title>
+</head>
+
+<body>
+  <button id="topBtn" title="Go to top">Top</button>
+  <div class="wrapper">
+    <div class="content">
+      <div class="sidenav">
+        <a href="javascript:void(0)" class="closeBtnNav">&times;</a>
+        <a href="#refhome" tabindex="1">Home</a>
+        <a href="#refabout" tabindex="2">About</a>
+        <a href="#refbuy" tabindex="3">Buy</a>
+        <a href="#refservices" tabindex="4">Services</a>
+        <a href="#refexperiment" tabindex="5">Experiment</a>
+      </div>
+      <header>
+        <div class="container">
+          <a id="refhome"></a>
+          <div class="branding">
+            <img class="logo" src="./img/logo.png" alt="logo">
+          </div>
+          <nav class="cl_nav">
+            <ul>
+              <li><a href="#menu" class="sidebar menu_vsblty">&#9776; Menu</a></li>
+              <li class="current"><a href="index.html">Home</a></li>
+              <li><a href="#refabout">About</a></li>
+              <li><a href="#refbuy">Buy</a></li>
+              <li><a href="#refservices">Services</a></li>
+              <li><a href="#refexperiment">Experiment</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section class="showcase">
+        <div class="container">
+          <div class="heading">
+            <h1 class="cl_h1">Lorem ipsum dolor</h1>
+            <p><strong>Quisque tempus fringilla lectus, nec sagittis nibh iaculis vitae. Proin id metus leo. Proin laoreet tellus id posuere finibus. Donec ac nisl pulvinar, aliquet enim ut, feugiat elit. Donec nec mauris nulla. Curabitur cursus semper odio, et
+              hendrerit ante.</strong></p>
+          </div>
+          <aside class="form1">
+            <div class="dark">
+              <div id="login_div">
+                <h3>Authorization</h3>
+                <input type="checkbox" id="form-switch">
+                <form class="login-form logform quote" method="post">
+                  <input type="text" id="auth_login" placeholder="Username" required>
+                  <input type="password" id="auth_password" placeholder="Password" required>
+                  <button type="button" id="auth" class="button_1 authstyle">Sign In</button>
+                  <label class="lblSwFrm" for="form-switch"><span>Register</span></label>
+                </form>
+                <form class="register-form logform quote" method="post">
+                  <input type="text" id="register_login" placeholder="Email..." required>
+                  <input type="password" id="register_password" placeholder="Password..." required>
+                  <input type="password" id="register_confirmation" placeholder="Confirm Password..." required>
+                  <button type="button" id="register" class="button_1 authstyle">Register</button>
+                  <label class="lblSwFrm" for="form-switch">Already Member? Sign In Now.</label>
+                </form>
+              </div>
+              <div id="user_div">
+                <h3>Welcome!</h3>
+                <p id="user_signed">User</p>
+                <button id="signOut" class="button_1 authstyle">Logout</button>
+              </div>
+            </div>
+          </aside>
+
+        </div>
+        <div class="clear"></div>
+      </section>
+      <section class="about">
+        <a id="refabout"></a>
+        <div class="container">
+          <article class="about-col">
+            <h2 class="page-title">About Us</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius auctor lacus nec feugiat. Phasellus sit amet ex ipsum. Praesent pharetra tincidunt tempor. Etiam velit eros, dapibus eget porta in, lacinia et magna. Nam eget eros non orci consectetur
+              congue at ac augue. Proin eget arcu in enim feugiat ultricies. Curabitur maximus metus nec metus pretium viverra at et orci. Integer hendrerit ante ut placerat cursus.
+            </p>
+            <p class="dark">
+              Aliquam eget pharetra diam. Nulla placerat lorem at turpis tempor, vel ultrices dui tincidunt. Proin quis egestas lorem. Mauris vehicula lectus odio, sit amet dictum justo feugiat a. Praesent id dictum lacus. Sed ullamcorper id erat ut dictum. Fusce porttitor
+              lorem sapien, in aliquet sapien convallis et. Donec nec mauris nulla. Curabitur cursus semper odio, et hendrerit ante. Nunc at cursus ante. Maecenas gravida ligula ut efficitur suscipit. Nulla id turpis varius, pretium nunc sed, fermentum
+              sem. Sed lacinia nunc non interdum pellentesque. Curabitur maximus metus nec metus pretium viverra at et orci. Integer hendrerit ante ut placerat cursus. Curabitur maximus metus nec metus pretium viverra at et orci. Integer hendrerit ante
+              cursus.
+            </p>
+          </article>
+          <aside class="form2">
+            <div class="dark">
+              <h3>What We Do</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius auctor lacus nec feugiat. Phasellus sit amet ex ipsum. Praesent pharetra tincidunt tempor. Etiam velit eros, dapibus eget porta in, lacinia. Aliquam porttitor volutpat
+                venenatis.
+              </p>
+            </div>
+          </aside>
+        </div>
+        <div class="clear"></div>
+      </section>
+      <a id="refbuy"></a>
+      <section class="buybox">
+        <div class="container">
+          <div class="box">
+            <img src="./img/cop1.png" alt="copter1">
+            <h3>Model 1</h3>
+            <p>Aliquam porttitor volutpat venenatis.</p>
+          </div>
+          <div class="box">
+            <img src="./img/cop2.png" alt="copter2">
+            <h3>Model 2</h3>
+            <p>Proin sagittis velit libero, in ultricies nisl lobortis et.</p>
+          </div>
+          <div class="box">
+            <img src="./img/cop3.png" alt="copter3">
+            <h3>Model 3</h3>
+            <p>Quisque tempus fringilla lectus, nec sagittis nibh iaculis vitae.</p>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </section>
+      <section id="services">
+        <a id="refservices"></a>
+        <div class="container">
+          <article class="services-col">
+            <h2 class="page-title">Services</h2>
+            <ul>
+              <li>
+                <h3>Nulla facilisi</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies at, vulputate id lorem. Nulla facilisi.</p>
+                <p>Pricing: $1000</p>
+              </li>
+              <li>
+                <h3>Lorem ipsum dolor</h3>
+                <p>Nam eget eros non orci consectetur congue at ac augue. Proin eget arcu in enim feugiat ultricies.</p>
+                <p>Pricing: $300 per month</p>
+              </li>
+              <li>
+                <h3>Vivamus mi augue</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies at, vulputate id lorem. Nulla facilisi.</p>
+                <p>Pricing: $25 per hour</p>
+              </li>
+            </ul>
+          </article>
+          <aside class="form3">
+            <div class="dark">
+              <h3>Vivamus mi augue</h3>
+              <form class="quote">
+                <label>Name</label>
+                <input type="text" placeholder="Name">
+                <label>Email</label>
+                <input type="email" placeholder="Emial Address">
+                <label>Message</label>
+                <textarea class="textar" placeholder="Message"></textarea>
+                <button class="button_1" type="submit">Send</button>
+              </form>
+            </div>
+          </aside>
+        </div>
+        <div class="clear"></div>
+      </section>
+      <section class="experiment">
+        <div class="container">
+          <div id="exprmnt">
+            <a id="refexperiment"></a>
+            <form>
+              <h4>Experiment</h4>
+              <p>Please, change font-size of paragraphs!</p>
+              <input id="inputPx" type="number" placeholder="8-24px" name="quantity" min="8" max="24">
+              <input id="changeTagP" class="button_1" type="button" value="Change">
+            </form>
+            <hr>
+            <p>Please, change background-color.</p>
+            <input id="myColorPicker" type="color" value="#e8491d">
+            <hr>
+            <p>Please, choose a font:</p>
+            <div>
+              <label>
+                <input type="radio" name="radioFont" value="Roboto" checked>Roboto</label>
+            </div>
+            <div>
+              <label>
+                <input type="radio" name="radioFont" value="Krona One">Krona One</label>
+            </div>
+            <div>
+              <label>
+                <input type="radio" name="radioFont" value="Saira Condensed">Saira Condensed</label>
+            </div>
+            <div>
+              <button id="changeFontBtn" class="button_1" type="button">Submit</button>
+            </div>
+            <p id="changeFontP">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis et soluta blanditiis voluptates pariatur, ducimus molestiae commodi placeat quae doloremque optio eum eveniet, at odio harum cumque architecto, sapiente saepe.</p>
+            <hr>
+            <p>Please, delete a last paragraph of this page.</p>
+            <button id="delPBtn" class="button_1" type="submit">Delete</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <p>Artem Kalyuzhin, Copyright &copy; 2018</p>
+    </footer>
+
+
+    <!-- Main script -->
+    <script src="./source/script.js"></script>
+  </div>
+</body>
+
+</html>

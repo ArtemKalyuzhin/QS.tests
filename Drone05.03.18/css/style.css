@@ -1,0 +1,443 @@
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, Helvetica, Sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  /* transition: background-color .6s; */
+}
+
+/*------*/
+
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  margin: 0 auto;
+  min-height: 100%;
+  position: relative;
+  transition: margin-left 0.5s;
+}
+
+.content {
+  padding-bottom: 80px;
+}
+
+/*------*/
+
+.menu_vsblty {
+  visibility: hidden;
+}
+
+/* Global */
+
+.clear {
+  clear: both;
+}
+
+.container {
+  margin: auto;
+  overflow: hidden;
+  width: 80%;
+}
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.button_1 {
+  background: #e8491d;
+  border: 0;
+  color: #ffffff;
+  height: 30px;
+  width: 73px;
+}
+
+.dark {
+  background: #35424a;
+  color: #ffffff;
+  height: 100%;
+  padding: 11px;
+}
+
+.textar {
+  height: 55px;
+}
+
+/*Header*/
+
+header {
+  background: #35424a;
+  border-bottom: #e8491d 3px solid;
+  color: #ffffff;
+  min-height: 70px;
+}
+
+header a {
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header a:hover {
+  color: #e8491d;
+}
+
+header li {
+  display: inline;
+  float: left;
+  padding: 0 20px 0 20px;
+}
+
+.branding {
+  float: left;
+}
+
+header nav {
+  float: right;
+  margin-top: 40px;
+}
+
+/* header .current a {
+  color: #e8491d;
+  font-weight: bold;
+} */
+
+.logo {
+  height: 100px;
+  width: 100px;
+}
+
+/* Showcase */
+
+.showcase {
+  background: url('../img/showcase.png') no-repeat -550px -440px;
+  background-position: center center;
+  color: #e8491d;
+  min-height: 400px;
+  text-align: center;
+}
+
+.showcase .cl_h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.showcase p {
+  font-size: 20px;
+}
+
+.heading {
+  float: left;
+  width: 70%;
+}
+
+.login {
+  color: #ffffff;
+  padding: 15px;
+}
+
+#login label {
+  float: left;
+}
+
+#login form {
+  float: right;
+  margin-top: 15px;
+}
+
+.logform {
+  height: 100%;
+  width: 100%;
+}
+
+.authstyle {
+  margin: 5px;
+}
+
+/* Form1 for Showcase block */
+
+.form1 {
+  float: right;
+  margin-top: 10px;
+  width: 25%;
+}
+
+.quote input, .quote textarea {
+  margin-bottom: 7px;
+  padding: 5px;
+  width: 104%;
+}
+
+.lblSwFrm {
+  cursor: pointer;
+}
+
+.lblSwFrm:hover {
+  color: #e8491d;
+}
+
+#form-switch {
+  display: none;
+}
+
+.register-form {
+  display: none;
+}
+
+#form-switch:checked~.register-form {
+  display: block;
+}
+
+#form-switch:checked~.login-form {
+  display: none;
+}
+
+/* About */
+
+/* About-column */
+
+.about-col {
+  float: left;
+  width: 65%;
+}
+
+/* Form2 for About block */
+
+.form2 {
+  float: right;
+  margin-top: 10px;
+  width: 30%;
+}
+
+.form2 .quote input, .form2 .quote textarea {
+  width: 100%;
+}
+
+/* Section BuyBox */
+
+.buybox {
+  background: #35424a;
+  margin-top: 20px;
+}
+
+.box {
+  float: left;
+  margin-top: 10px;
+  text-align: center;
+  width: 33%;
+}
+
+.buybox .box img {
+  width: 180px;
+}
+
+.buybox h3 {
+  color: white;
+  font-weight: bold
+}
+
+.buybox p {
+  color: white;
+}
+
+/* Form3 for Service block */
+
+.form3 {
+  float: right;
+  margin-top: 10px;
+  width: 30%;
+}
+
+.quote input, .quote textarea {
+  padding: 5px;
+  width: 95%;
+}
+
+.services-col {
+  float: left;
+  width: 65%;
+}
+
+/* Menu - Sidebar */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #35424a;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #e8491d;
+}
+
+.closeBtnNav {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Experiment */
+
+.experiment {
+  background: #35424a;
+  margin-top: 20px;
+}
+
+#exprmnt {
+  background-color: #35424a;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+
+footer {
+  /*    padding: 20px;*/
+  margin-top: 20px;
+  color: #ffffff;
+  background-color: #e8491d;
+  text-align: center;
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+}
+
+.footer p {
+  padding-top: 15px;
+}
+
+/*Button: Scroll to top*/
+
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: 2px solid black;
+  outline: none;
+  background-color: #e8491d;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#topBtn:hover {
+  background-color: #555;
+}
+
+/*--Media Queries--*/
+
+@media screen and (max-width: 1000px) {
+  .about {
+    background-size: 375px auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header li {
+    width: 100%;
+    text-align: center;
+  }
+  .branding {
+    width: 30%;
+  }
+  .cl_nav {
+    float: right;
+    margin: 5;
+    width: 70%;
+  }
+  .box {
+    float: left;
+    width: 100%;
+  }
+  .services-col {
+    float: none;
+    width: 100%;
+  }
+  .form3 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .heading {
+    float: none;
+    width: 100%;
+  }
+  .form1 {
+    margin-bottom: 50px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .heading {
+    float: none;
+    width: 100%;
+  }
+  .form1 {
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  .about-col {
+    float: none;
+    width: 100%;
+  }
+  .form2 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 480px) {
+  .cl_h1 {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
